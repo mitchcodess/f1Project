@@ -1,0 +1,11 @@
+@font-face  {
+  font-family: formula;
+  src: url('./assets/media/font/Formula1-Regular.ttf')
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: formula;
+}

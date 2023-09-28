@@ -1,7 +1,9 @@
 import bgVideo from '../../media/video/checo.mp4'
 import './VideoHero.css'
 import {Fade} from '@mui/material'
-function VideoHero() {
+function VideoHero({onScroll}) {
+
+
     return (
         <>
             <div className='main'>
@@ -10,6 +12,7 @@ function VideoHero() {
                 <div className='content'>
                     <Fade in={true} timeout={1000}><h1>Welcome to Formula 1.</h1></Fade>
                     <Fade in={true} timeout={1000}><p>Everything you need to know about F1</p></Fade>
+                    <button onClick={onScroll}>Get Started</button>
                 </div>
             </div>
         </>

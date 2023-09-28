@@ -2,6 +2,7 @@
 .imgtop-card-container {
     display: flex;
     height: 100%;
+    
 }
 
 .text-box {
@@ -13,7 +14,11 @@
 }
 
 .image-box {
-    width: 50%;
+    max-width: 50%;
     flex-grow: 1;
     flex-basis: 0;
+}
+
+.image-box img {
+    max-width: 100px;
 }

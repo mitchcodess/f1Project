@@ -1,0 +1,19 @@
+
+.imgtop-card-container {
+    display: flex;
+    height: 100%;
+}
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.image-box {
+    width: 50%;
+    flex-grow: 1;
+    flex-basis: 0;
+}

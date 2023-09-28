@@ -9,6 +9,7 @@ function VideoHero() {
                 <video src={bgVideo} autoPlay muted />
                 <div className='content'>
                     <Fade in={true} timeout={1000}><h1>Welcome to Formula 1.</h1></Fade>
+                    <Fade in={true} timeout={1000}><p>Everything you need to know about F1</p></Fade>
                 </div>
             </div>
         </>

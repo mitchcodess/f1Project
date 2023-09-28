@@ -1,9 +1,9 @@
-img {
+.nav-bar img {
     height: 50px;
     
 }
 
-.navigation {
+.nav-bar {
     height: 70px;
     display: flex;
     align-items: center;
@@ -12,23 +12,47 @@ img {
     
 }
 
-.navigation li  {
+.nav-bar li  {
     list-style: none;
-    
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+    font-weight:  600;
 }
 
-.navigation li a {
+
+.nav-bar li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--main-color-red);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+
+}
+
+.nav-bar li:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+
+.nav-bar li a {
     text-decoration: none;
     
 }
-.navigation li a:link {
+.nav-bar li a:link {
     color: black;
 }
 
-.navigation li a:visited {
+.nav-bar li a:visited {
     color: black;
 }
 
-.navigation li a:active {
+.nav-bar li a:active {
     color: black
 }

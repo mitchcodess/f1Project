@@ -3,6 +3,10 @@
   src: url('./assets/media/font/Formula1-Regular.ttf')
 }
 
+:root {
+  --main-color-red: #da0600;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

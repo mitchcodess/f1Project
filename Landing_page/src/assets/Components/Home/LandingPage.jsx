@@ -4,7 +4,8 @@ import Navigation from "../Navigation/Navigation";
 import "./LandingPage.css";
 import VideoHero from "./VideoHero";
 import Carousel from "react-material-ui-carousel";
-import Card from "../UI/Card";
+import { Card } from '@mui/material'
+import ThreeCard from "./ThreeCard";
 function LandingPage() {
 
         const [driverList, setDriverList] = useState([])
@@ -28,12 +29,11 @@ function LandingPage() {
 
   return (
     <>
-        <Navigation />
         <VideoHero />
         {/* <Carousel >
             {driverList.map((driver, i) => <Card key={i} driver={driver}  />)}
         </Carousel> */}
-        <MainBody />
+        <ThreeCard />
 
     </>
   );

@@ -2,8 +2,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr ;
     place-items: center;
-    row-gap: 100px;
-    width: 80%;
+    row-gap: 70px;
+    width: 65%;
     margin: 0 auto;
     margin-top: 150px
 }

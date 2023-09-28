@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom"
 import './Navigation.css'
-function Navigation() {
+function Navigation({theme}) {
+
     return (
         <>
            <nav>

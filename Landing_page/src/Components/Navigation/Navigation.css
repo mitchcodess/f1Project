@@ -16,7 +16,7 @@
     list-style: none;
     display: inline-block;
     position: relative;
-    color: #0087ca;
+    color: #0c99e0;
     font-weight:  600;
     font-size: 14px;
 }
@@ -47,13 +47,13 @@
     
 }
 .nav-bar li a:link {
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .nav-bar li a:visited {
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .nav-bar li a:active {
-    color: black
+    color: rgb(255, 255, 255)
 }

@@ -1,0 +1,10 @@
+.loading-page-container {
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(15px);
+    position: absolute;
+    z-index: 1040;
+}

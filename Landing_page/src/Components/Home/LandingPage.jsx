@@ -65,11 +65,11 @@ function LandingPage() {
         {/* <Carousel >
             {driverList.map((driver, i) => <Card key={i} driver={driver}  />)}
         </Carousel> */}
-        {/* <ThreeCard>
+        <ThreeCard>
             <div ref={divRef} className="race-format-body">
             {items.map((item, i) => <ImageTopCard key={i} title={item.title} description={item.description} src={item.src}/>)}
          </div>
-        </ThreeCard> */}
+        </ThreeCard>
         
 
     </>

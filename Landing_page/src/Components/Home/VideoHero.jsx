@@ -1,4 +1,5 @@
-import bgVideo from '../../media/video/checo.mp4'
+import bgVideo from '../../assets/media/video/checo.mp4'
+
 import './VideoHero.css'
 import {Fade} from '@mui/material'
 function VideoHero({onScroll}) {

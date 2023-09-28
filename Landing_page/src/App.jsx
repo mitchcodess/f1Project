@@ -1,13 +1,13 @@
 
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import LandingPage from './assets/Components/Home/LandingPage'
+import LandingPage from './Components/Home/LandingPage'
 
-import Drivers from './assets/Components/Drivers/Drivers'
-import Navigation from './assets/Components/Navigation/Navigation'
-import Constructors from './assets/Components/Constructors/Constructors'
-import Circuits from './assets/Components/Circuits/Circuits'
-import Gallery from './assets/Components/Gallery/Gallery'
-import History from './assets/Components/History/History'
+import Drivers from './Components/Drivers/Drivers'
+import Navigation from './Components/Navigation/Navigation'
+import Constructors from './Components/Constructors/Constructors'
+import Circuits from './Components/Circuits/Circuits'
+import Gallery from './Components/Gallery/Gallery'
+import History from './Components/History/History'
 function App() {
   return (    
   <Router>

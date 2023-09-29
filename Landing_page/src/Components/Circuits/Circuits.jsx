@@ -4,12 +4,15 @@ import LoadingPage from '../UI/Loading/LoadingPage'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import CircuitCarouselCard from '../UI/Cards/CircuitCarouselCard';
+import BahrainSVG from '../UI/Loading/bahrain';
+import './Circuits.css'
 
 
 export default function Circuits() {
     const [loading, setLoading] = useState(true)
     const [circuits, setCircuits] = useState([])
 
+    console.log('circuits', circuits)
 
     const responsive = {
       superLargeDesktop: {
@@ -39,34 +42,67 @@ export default function Circuits() {
           
           if(response.ok) {
               const data = await response.json()
-              console.log(data.MRData.CircuitTable.Circuits)
-    
+              const circuitArr= data.MRData.CircuitTable.Circuits
+              console.log(circuitArr)
+              setCircuits(circuitArr)
               setTimeout(() => {
                   setLoading(false)
-                  }, 1500
+                  }, 3000
                   )
-          }
+          }                                                                                                   
       }
 
       getCurrentDrivers()
 
   }, [])
+
+
+const circuitImages = [
+  'https://static.thenounproject.com/png/2771762-200.png',
+  'https://static.thenounproject.com/png/2771795-200.png',
+  'https://static.thenounproject.com/png/2771792-200.png',
+  'https://static.thenounproject.com/png/2771789-200.png',
+  'https://static.thenounproject.com/png/2771785-200.png',
+  'https://static.thenounproject.com/png/2771786-200.png',
+  'https://static.thenounproject.com/png/2771779-200.png',
+  'https://static.thenounproject.com/png/2771780-200.png',
+  'https://static.thenounproject.com/png/2771780-200.png',
+  'https://static.thenounproject.com/png/2771786-200.png',
+  'https://static.thenounproject.com/png/2771779-200.png',
+  'https://static.thenounproject.com/png/2771780-200.png',
+  'https://static.thenounproject.com/png/2771780-200.png',
+  'https://static.thenounproject.com/png/2771786-200.png',
+  'https://static.thenounproject.com/png/2771779-200.png',
+  'https://static.thenounproject.com/png/2771780-200.png',
+  'https://static.thenounproject.com/png/2771780-200.png',
+  'https://static.thenounproject.com/png/2771786-200.png',
+  'https://static.thenounproject.com/png/2771779-200.png',
+  'https://static.thenounproject.com/png/2771780-200.png',
+  'https://static.thenounproject.com/png/2771780-200.png',
+  'https://static.thenounproject.com/png/2771786-200.png',
+  'https://static.thenounproject.com/png/2771779-200.png',
+  'https://static.thenounproject.com/png/2771780-200.png',
+  'https://static.thenounproject.com/png/2771780-200.png',
+  
+  
+
+]; 
+
   return (
     <>
     {loading ? <LoadingPage/> : 
-
+ <div className='carousel-container'> 
 <Carousel responsive={responsive}>
- <CircuitCarouselCard> 
- 
- </CircuitCarouselCard>
- <CircuitCarouselCard> 
 
-</CircuitCarouselCard>
-<CircuitCarouselCard> 
-
- </CircuitCarouselCard>
-
+   {circuits.map((circuit, i) => 
+   <CircuitCarouselCard key={i}>
+    <img src={`${circuitImages[i]}`}/>
+    <p>{circuit.circuitName}</p>
+    </CircuitCarouselCard>
+    )
+  }
 </Carousel > 
+</div>  
 }
     </>
   )

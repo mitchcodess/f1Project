@@ -1,3 +1,4 @@
+import './CircuitCarouselCard.css'
 function CircuitCarouselCard({children}) {
     return (
         <div className="carousel-circuit-card">

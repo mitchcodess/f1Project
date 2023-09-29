@@ -1,0 +1,11 @@
+.carousel-circuit-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.carousel-circuit-card img {
+   height: 400px;
+}

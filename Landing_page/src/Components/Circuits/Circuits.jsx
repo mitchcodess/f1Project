@@ -84,8 +84,6 @@ const circuitImages = [
   'https://static.thenounproject.com/png/2771780-200.png',
   'https://static.thenounproject.com/png/2771780-200.png',
   
-  
-
 ]; 
 
   return (

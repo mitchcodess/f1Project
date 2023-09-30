@@ -16,11 +16,18 @@ const darkTheme = createTheme({
   },
 });
 
+const lightTheme = createTheme({
+  palette: {
+    mode: 'light',
+  },
+});
+
+
 
 
 function App() {
   return (    
-  <ThemeProvider theme={darkTheme}>
+  <ThemeProvider theme={lightTheme}>
     <CssBaseline/>
   <Router>
     <Navigation/>

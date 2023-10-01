@@ -5,7 +5,7 @@
     padding: 20px 20px;
     margin: 0 auto;
     gap: 50px;
-    line-height: 40px;
+    line-height: 30px;
 }
 
 .sbs-image-container {
@@ -15,6 +15,7 @@ justify-content: center;
 flex-basis: 0;
 flex-grow: 1;
 }
+
 .sbs-image-container img {
     max-width: 600px;
     max-height: 400px;
@@ -26,11 +27,12 @@ flex-grow: 1;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+   
 }
 
 .sbs-text-container p {
     margin-top: 10px;
-    font-size: 15px;
+    font-size: 13px;
     max-height: 70%;
     max-width: 90%;
     flex-wrap: nowrap;
